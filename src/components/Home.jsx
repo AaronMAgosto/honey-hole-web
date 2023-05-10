@@ -17,7 +17,7 @@ export default function Home({honeyHoles, setHoneyHoles}) {
       : honeyHoles.map(
         (honeyHole) => (
           <div key={honeyHole.id} >
-          <img src={honeyHole.location} />
+           <img src={honeyHole.location} />
           <h2>{honeyHole.species}</h2>
           <p>Size: {honeyHole.size}</p>
           </div>
