@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row, Card } from "react-bootstrap";
 
 export default function Home({honeyHoles, setHoneyHoles}) {
 
@@ -11,26 +11,30 @@ export default function Home({honeyHoles, setHoneyHoles}) {
   }, []);
   
   return (
-    <Container className="main-container">
+    <Container className="main-container" fluid>
       <Row>
-        <Col><h2 className="text-center">Honey Holes</h2></Col>
+        <Col><h2 className="bg-danger text-center">Honey Holes</h2></Col>
       </Row>
-
-      <Row>
+      
+      <Row className="bg-info d-flex justify-content-center g-4">
       {!honeyHoles
       ? "Loading..."
       : honeyHoles.map(
         (honeyHole) => (
-          <div className="hole-card" key={honeyHole.id} >
-           <img src={honeyHole.location} />
-          <h2>{honeyHole.species}</h2>
-          <p>Size: {honeyHole.size}</p>
-          <Button> Delete Honey Hole :(</Button>
-          </div>
+            <Col sm={10} md={4} lg={4}>
+              <Card >
+                <div className="hole-card" key={honeyHole.id} >
+                  <img src={honeyHole.location} />
+                <h2>{honeyHole.species}</h2>
+                <p>Size: {honeyHole.size}</p>
+                <Button> Delete Honey Hole :(</Button>
+              </div>
+              </Card>
+            </Col>          
         )
       )
       }
       </Row>
-      </Container>
+    </Container>
   )
 }

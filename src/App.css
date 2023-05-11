@@ -16,6 +16,7 @@
 
 .hole-card {
   border: 1px solid red;
+  display: grid;
   padding: 10px;
   margin-bottom: 20px;
 }
