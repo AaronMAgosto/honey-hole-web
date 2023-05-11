@@ -26,7 +26,7 @@ export default function Panel({data: {id,title,info, img}}) {
     <h3> {title}</h3>
     <p>{info}</p>
     <Modal.Footer>
-      <Button href="https://honey-hole-aa.web.app/honeyholes" >Locate Honey Hole</Button>
+      <Link to="/honeyholes"><Button>Locate Honey Hole</Button></Link>
     </Modal.Footer>
     </Modal>
 

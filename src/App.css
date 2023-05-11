@@ -14,3 +14,8 @@
   width: 100%;
 }
 
+.hole-card {
+  border: 1px solid red;
+  padding: 10px;
+  margin-bottom: 20px;
+}
