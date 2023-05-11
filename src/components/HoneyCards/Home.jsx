@@ -9,6 +9,22 @@ export default function Home({honeyHoles, setHoneyHoles}) {
     .then(setHoneyHoles)
     .catch(alert) 
   }, []);
+
+  function deleteClick(id) {
+    console.log(id)
+    fetch("https://honey-hole-aa.web.app/honeyholes/"+id, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json",
+      },
+    })
+    .then(resp => resp.json())
+    .then(setHoneyHoles)
+    .catch(alert) 
+  
+
+
+  } 
   
   return (
     <Container className="main-container" fluid>
@@ -23,11 +39,11 @@ export default function Home({honeyHoles, setHoneyHoles}) {
         (honeyHole) => (
             <Col sm={10} md={4} lg={4}>
               <Card >
-                <div className="hole-card" key={honeyHole.id} >
+                <div className="hole-card" key={honeyHole._id} >
                   <img src={honeyHole.location} />
                 <h2>{honeyHole.species}</h2>
                 <p>Size: {honeyHole.size}</p>
-                <Button> Delete Honey Hole :(</Button>
+                <Button onClick={() => deleteClick(honeyHole._id)}> Delete</Button>
               </div>
               </Card>
             </Col>          
