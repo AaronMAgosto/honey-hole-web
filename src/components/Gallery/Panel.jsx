@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Col, Modal, Image, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Panel({data: {id,title,info, img}}) {
 
@@ -16,15 +17,17 @@ export default function Panel({data: {id,title,info, img}}) {
       alt={id}
       />
     
-    <Button onClick={handleShow}>Open</Button>
+    <Button onClick={handleShow}>Select County</Button>
     <Modal 
     size="md"
     show={show}
     onHide={handleClose}
-    onClick
     className="backdrop-effect">
     <h3> {title}</h3>
     <p>{info}</p>
+    <Modal.Footer>
+      <Button href="https://honey-hole-aa.web.app/honeyholes" >Locate Honey Hole</Button>
+    </Modal.Footer>
     </Modal>
 
     </Col>

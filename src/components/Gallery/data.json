@@ -1,26 +1,15 @@
 [
   {
     "id" : "1",
-   "title": "title1",
-   "info": "info1",
+   "title": "Broward County",
+   "info": "Broward County, Florida offers exciting freshwater fishing opportunities with a variety of species including largemouth bass, peacock bass, catfish, crappie, and tilapia. Accessible through multiple parks and recreational areas, as well as the Everglades Wildlife Management Area, Broward County promises an unforgettable fishing experience for anglers of all levels. Don't forget to grab your Florida fishing license and get ready for an adventure!",
    "img":"img1"
   },
   {
     "id" : "2",
-   "title": "title2",
-   "info": "info2",
-   "img":"img2"
-  },
-  {
-    "id" : "3",
-   "title": "title3",
-   "info": "info3",
-   "img":"img3"
-  },
-  {
-    "id" : "4",
-   "title": "title4",
-   "info": "info4",
-   "img":"img4"
+   "title": "Palm Beach County",
+   "info": "Palm Beach County, Florida is a freshwater fishing haven with abundant lakes, rivers, and canals. From largemouth bass to peacock bass and catfish, you'll find an array of species to catch. Parks such as John Prince Park and Okeeheelee Park offer easy access to fishing, boating, and camping activities. For a unique and scenic fishing experience, head to the Loxahatchee River where you can catch species like snook, tarpon, and jack crevalle. Grab your Florida fishing license and get ready for an exciting angling adventure in Palm Beach County!",
+   "img": ""
   }
+ 
 ]

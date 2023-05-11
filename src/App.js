@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home.jsx";
+import Home from "./components/Home"
 import Hero from "./pages/HomePage.jsx";
 import Gallery from "./components/Gallery"
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,8 +15,8 @@ function App() {
     <BrowserRouter>
      <Hero/>
      <Routes>
-       <Route path="/"  element={<Home honeyHoles={honeyHoles} setHoneyHoles={setHoneyHoles} />} />
-       <Route path="/gallery" element={<Gallery />} />
+       <Route path="/honeyholes"  element={<Home honeyHoles={honeyHoles} setHoneyHoles={setHoneyHoles} />} />
+       <Route path="/" element={<Gallery />} />
      </Routes>
     </BrowserRouter>
     </>
