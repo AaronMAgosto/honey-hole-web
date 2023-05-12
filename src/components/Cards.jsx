@@ -21,10 +21,9 @@ export default function Home({honeyHoles, setHoneyHoles}) {
     .then(resp => resp.json())
     .then(setHoneyHoles)
     .catch(alert) 
-  
+  }
 
 
-  } 
   
   return (
     <Container className="main-container" fluid>
@@ -43,7 +42,9 @@ export default function Home({honeyHoles, setHoneyHoles}) {
                   <img src={honeyHole.location} />
                 <h2>{honeyHole.species}</h2>
                 <p>Size: {honeyHole.size}</p>
+                
                 <Button onClick={() => deleteClick(honeyHole._id)}> Delete</Button>
+                
               </div>
               </Card>
             </Col>          

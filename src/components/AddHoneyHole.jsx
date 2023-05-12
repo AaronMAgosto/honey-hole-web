@@ -25,6 +25,9 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
         }
         setHoneyHoles(data);
         setShowModal(false);
+        setLocation("");
+        setSpecies("");
+        setSize("")
       })
       .catch(alert);
   };
