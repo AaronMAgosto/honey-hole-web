@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Col, Modal, Image, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -34,3 +35,4 @@ export default function Panel({data: {id,title,info, img}}) {
     </>
   )
 }
+

@@ -1,7 +1,9 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
+
 function MyNavbar() {
   return (
+   
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">HoneyHole</Navbar.Brand>
@@ -14,6 +16,7 @@ function MyNavbar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
   );
 }
 

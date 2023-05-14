@@ -5,7 +5,7 @@ export default function Hero() {
   
   return(
     <main>
-      <Container className="bg-danger">
+      <Container className="hero">
         <Row className="justify-content-center">
           <Col xs={10} md={6} className=""> 
           <h1>Hello! and Welcome to HoneyHole</h1>
