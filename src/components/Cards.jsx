@@ -44,7 +44,7 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
                 <h3>{honeyHole.species}</h3>
                 <p>Size: {honeyHole.size}</p>               
                 <Button onClick={() => deleteClick(honeyHole._id)}> Delete</Button>
-                <UpdateHoneyHole/>
+                <UpdateHoneyHole honeyHole={honeyHole} setHoneyHoles={setHoneyHoles} />
                 
               </div>
               </Card>

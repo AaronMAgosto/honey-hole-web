@@ -4,18 +4,18 @@ import { Modal } from "react-bootstrap";
 import {Button} from "react-bootstrap";
 import { PencilSquare } from "react-bootstrap-icons";
   
-export default function UpdateHoneyHole({ honeyHoleId, setHoneyHoles, currentLocation, currentSpecies, currentSize }) {
+export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
 
-  const [locaton, setLocation] = useState("")
-  const [species, setSpecies] = useState("")
-  const [size, setSize] = useState()
+  const [location, setLocation] = useState(honeyHole.location)
+  const [species, setSpecies] = useState(honeyHole.species)
+  const [size, setSize] = useState(honeyHole.size)
   const [show, setShow] = useState(false)
-  const [ image, setImage] =useState()
-  useEffect(() => {
-    setLocation(currentLocation)
-    setSpecies(currentSpecies)
-    setSize(currentSize)
-  }, [])
+
+  // useEffect(() => {
+  //   setLocation(currentLocation)
+  //   setSpecies(currentSpecies)
+  //   setSize(currentSize)
+  // }, [])
 
   const handleShow = () => setShow(true)
   const handleClose = () => {
@@ -45,12 +45,12 @@ export default function UpdateHoneyHole({ honeyHoleId, setHoneyHoles, currentLoc
   const handleEdit = (e) => {
     e.preventDefault()
 
-    fetch(`https://honey-hole-aa.web.app/honeyholes/${honeyHoleId}`, {
+    fetch(`https://honey-hole-aa.web.app/honeyholes/${honeyHole._id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ locaton, species, size }),
+      body: JSON.stringify({ location, species, size }),
     })
     .then((resp) => resp.json())
     .then((data) => {
@@ -62,6 +62,7 @@ export default function UpdateHoneyHole({ honeyHoleId, setHoneyHoles, currentLoc
       setLocation("") 
       setSpecies() 
       setSize("") 
+      setShow(false)
    
     })
     .catch(alert);
@@ -81,7 +82,7 @@ export default function UpdateHoneyHole({ honeyHoleId, setHoneyHoles, currentLoc
             <Form.Label>Location</Form.Label>
             <Form.Control
               type="text"
-              value={locaton}
+              value={location}
               onChange={(e) => setLocation(e.target.value)}
             />
           </Form.Group>
