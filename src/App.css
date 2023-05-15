@@ -21,4 +21,16 @@
   margin-bottom: 20px;
 }
 
+.hero{
+  background-image: url("https://media.giphy.com/media/ZY7tD6FsWhTyEUPNyR/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 
+}
+
+
+
+
+.heroP{
+  color: antiquewhite;
+}

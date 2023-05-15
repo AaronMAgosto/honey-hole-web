@@ -5,6 +5,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
   const [location, setLocation] = useState("");
   const [species, setSpecies] = useState("");
   const [size, setSize] = useState("");
+  const [image,  setImage] = useState("")
   const [showModal, setShowModal] = useState(false);
 
   const handleAddHoneyHole = (e) => {
@@ -35,6 +36,25 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
 
+
+  // function convertFile(files) {
+  //   if (files) {
+  //     // picks the first file from all the files selected
+  //     const fileRef = files[0] || "";
+  //     // picks the type so that it can send the right one to the database
+  //     const fileType = fileRef.type || "";
+  //     // sets reader as a new FileReader instance
+  //     const reader = new FileReader();
+  //     // converts fileref (the File) to a binary string
+  //     reader.readAsBinaryString(fileRef);
+  //     reader.onload = (ev) => {
+  //       // convert it to base64
+  //       setImage(`data:${fileType};base64,${window.btoa(ev.target.result)}`);
+  //     };
+  //   }
+  // }
+
+
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
@@ -48,6 +68,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
         <Modal.Body>
           <form onSubmit={handleAddHoneyHole}>
             <div className="form-field">
+
               <label htmlFor="location">
                 Location
                 <input
