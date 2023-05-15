@@ -38,8 +38,9 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
         (honeyHole) => (
             <Col sm={10} md={4} lg={4}>
               <Card >
+              <Card.Img variant="top" src="/images/wolfLake.png" />
                 <div className="hole-card" key={honeyHole._id} >
-                  <h1>{honeyHole.image}</h1>
+                  {/* <h1>{honeyHole.image}</h1> */}
                    <h2>{honeyHole.location}</h2>
                 <h3>{honeyHole.species}</h3>
                 <p>Size: {honeyHole.size}</p>               

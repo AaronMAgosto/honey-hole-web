@@ -16,7 +16,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({ location, species, size }),
+      body: JSON.stringify({ image,location, species, size }),
     })
       .then((resp) => resp.json())
       .then((data) => {
@@ -26,6 +26,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
         }
         setHoneyHoles(data);
         setShowModal(false);
+        setImage()
         setLocation("");
         setSpecies("");
         setSize("")
@@ -67,6 +68,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
         </Modal.Header>
         <Modal.Body>
           <form onSubmit={handleAddHoneyHole}>
+            
             <div className="form-field">
 
               <label htmlFor="location">
