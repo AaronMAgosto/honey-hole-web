@@ -58,9 +58,12 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+        
+     <span><button className="box"  onClick={handleShow}>
         Add Honey Hole!
-      </Button>
+        <i></i>
+      </button> </span>
+     
 
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -115,7 +118,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
 
             <br />
 
-            <div className="add-button">
+            <div className="">
               <input type="submit" value="Create Honey Hole" />
             </div>
           </form>
