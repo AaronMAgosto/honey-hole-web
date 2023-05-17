@@ -9,6 +9,7 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
   const [location, setLocation] = useState(honeyHole.location)
   const [species, setSpecies] = useState(honeyHole.species)
   const [size, setSize] = useState(honeyHole.size)
+  const [image, setImage] = useState(honeyHole.image)
   const [show, setShow] = useState(false)
 
   // useEffect(() => {
@@ -22,26 +23,23 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
     setShow(false)
   };
 
-  // function convertFile(files) {
-  //   if (files) {
-  //     // picks the first file from all the files selected
-  //     const fileRef = files[0] || ""
-  //     // picks the type so that it can send the right one to the database
-  //     const fileType = fileRef.type || ""
-  //     // sets reader as a new FileReader instance 
-  //     const reader = new FileReader()
-  //     // converts fileref (the rile) to a binary string
-  //     reader.readAsBinaryString(fileRef)
-  //     reader.onload = (ev) => {
-  //       // convert it to base64
-  //       setImage(`data:${fileType};base64,${window.btoa(ev.target.result)}`)
-  //     };
-  //   }
-  // }
+  function convertFile(files) {
+    if (files) {
+      // picks the first file from all the files selected
+      const fileRef = files[0] || ""
+      // picks the type so that it can send the right one to the database
+      const fileType = fileRef.type || ""
+      // sets reader as a new FileReader instance 
+      const reader = new FileReader()
+      // converts fileref (the rile) to a binary string
+      reader.readAsBinaryString(fileRef)
+      reader.onload = (ev) => {
+        // convert it to base64
+        setImage(`data:${fileType};base64,${window.btoa(ev.target.result)}`)
+      };
+    }
+  }
   
-  
-  
-
   const handleEdit = (e) => {
     e.preventDefault()
 
@@ -50,7 +48,7 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ location, species, size }),
+      body: JSON.stringify({ image, location, species, size }),
     })
     .then((resp) => resp.json())
     .then((data) => {
@@ -59,6 +57,7 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
         return;
       }
       setHoneyHoles(data);
+      setImage()
       setLocation("") 
       setSpecies() 
       setSize("") 
@@ -79,6 +78,15 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
         <Form onSubmit={handleShow}>
           <Form.Group>
 
+            <Form.Label>Image</Form.Label>
+            <Form.Control
+              type="file"
+              // value={file}
+              onChange={(e) => convertFile(e.target.files)}
+            />
+          </Form.Group>
+  
+          <Form.Group>
             <Form.Label>Location</Form.Label>
             <Form.Control
               type="text"

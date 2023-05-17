@@ -31,7 +31,7 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
         <Col><h2 className="bg-danger text-center">Honey Holes</h2></Col>
       </Row>
       
-      <Row className="bg-info d-flex justify-content-center g-4">
+      <Row className="d-flex justify-content-center g-4">
       {!honeyHoles
       ? "Loading..."
       : honeyHoles.map(

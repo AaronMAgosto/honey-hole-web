@@ -1,0 +1,142 @@
+[
+  {
+    "id":1,
+    "image":"",
+    "location":"Everglades Holiday Park",
+    "species":"largemouth bass, bluegill, crappie, and catfish.",
+    "size":"small to large"
+  },
+  {
+    "id":2,
+    "image":"",
+    "location":"Markham Park",
+    "species":"largemouth bass, bluegill, catfish, and peacock bass.",
+    "size":"small to large"
+  },
+  {
+    "id":3,
+    "image":"",
+    "location":"Quiet Waters Park",
+    "species":"largemouth bass, bluegill, catfish, and tilapia.",
+    "size":"small to medium"
+  },
+  {
+    "id":4,
+    "image":"",
+    "location":"Sawgrass Recreation Park",
+    "species":"largemouth bass, bluegill, catfish, and bowfin.",
+    "size":"small to medium"
+  },
+  {
+    "id":5,
+    "image":"",
+    "location":"Tree Tops Park",
+    "species":"largemouth bass, bluegill, catfish, and tilapia.",
+    "size":"small to medium"
+  },
+  {
+    "id":6,
+    "image":"",
+    "location":"Brian Piccolo Park",
+    "species":"largemouth bass, bluegill, catfish, and peacock bass.",
+    "size":"small to medium"
+  },
+  {
+    "id":7,
+    "image":"",
+    "location":"West Lake Park",
+    "species":"largemouth bass, bluegill, catfish, and peacock bass.",
+    "size":"small to medium"
+  },
+  {
+    "id":8,
+    "image":"",
+    "location":"C.B. Smith Park",
+    "species":"largemouth bass, bluegill, catfish, and peacock bass.",
+    "size":"small to medium"
+  },
+  {
+    "id":9,
+    "image":"",
+    "location":"Anne Kolb Nature Center",
+    "species":"snook, tarpon, jack crevalle, and snapper.",
+    "size":"small to large"
+  },
+  {
+    "id":10,
+    "image":"",
+    "location":"Snyder Park",
+    "species":"largemouth bass, bluegill, catfish, and tilapia.",
+    "size":"small to large"
+  },
+  {
+    "id":11,
+    "image":"",
+    "location":"Lake Okeechobee",
+    "species":"largemouth bass, bluegill, crappie, and catfish.",
+    "size":"medium to large"
+  },
+  {
+    "id":12,
+    "image":"",
+    "location":"John Prince Park",
+    "species":" largemouth bass, bluegill, catfish, and tilapia.",
+    "size":"small to large"
+  },
+  {
+    "id":13,
+    "image":"",
+    "location":"Lake Osborne",
+    "species":"largemouth bass, bluegill, crappie, and catfish.",
+    "size":"small to large"
+  },
+  {
+    "id":14,
+    "image":"",
+    "location":"Loxahatchee National Wildlife Refuge",
+    "species":"largemouth bass, bluegill, catfish, and gar.",
+    "size":"small to large"
+  },
+  {
+    "id":15,
+    "image":"",
+    "location":"Jonathan Dickinson State Park",
+    "species":" largemouth bass, bluegill, catfish, and snook",
+    "size":"small to large"
+  },
+  {
+    "id":16,
+    "image":"",
+    "location":"Lake Ida",
+    "species":"lrgemouth bass, peacock bass, clown knifefish, and tarpon.",
+    "size":"small to large"
+  },
+  {
+    "id":17,
+    "image":"",
+    "location":"Okeeheelee Park",
+    "species":" largemouth bass, bluegill, catfish, and tilapia.",
+    "size":"small to large"
+  },
+  {
+    "id":18,
+    "image":"",
+    "location":"Grassy Waters Preserve",
+    "species":"largemouth bass, bluegill, catfish, and snook.",
+    "size":"small to large"
+  },
+  {
+    "id":19,
+    "image":"",
+    "location":"Riverbend Park",
+    "species":"argemouth bass, bluegill, catfish, and snook.",
+    "size":"small to large"
+  },
+  {
+    "id":20,
+    "image":"",
+    "location":"Sawfish Bay Park",
+    "species":"snook, tarpon, redfish, and jack crevalle",
+    "size":"small to large"
+  }
+]

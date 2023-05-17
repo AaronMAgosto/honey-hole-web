@@ -17,8 +17,9 @@ function App() {
     <BrowserRouter>
      <MyNavbar/>
      <Hero/>
+    
      <Routes>
-       <Route path="/honeyholes"  element={<Cards honeyHoles={honeyHoles} setHoneyHoles={setHoneyHoles} />} />
+       <Route path="/"  element={<Cards honeyHoles={honeyHoles} setHoneyHoles={setHoneyHoles} />} />
        <Route path="/" element={<Gallery />} />
      </Routes>
      <Footer/>

@@ -18,16 +18,20 @@
   border: 1px solid red;
   display: grid;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin: 10px;
 }
 
+.img-fluid{
+  
+}
 
 
 .hero{
   background-image: url("https://media.giphy.com/media/ZY7tD6FsWhTyEUPNyR/giphy.gif");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  height: 70vh;
+  height: 80vh;
 }
 
 
