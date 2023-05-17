@@ -21,23 +21,28 @@
   margin-bottom: 20px;
 }
 
+
+
 .hero{
   background-image: url("https://media.giphy.com/media/ZY7tD6FsWhTyEUPNyR/giphy.gif");
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 70vh;
-
 }
+
+
 
 .heroP{
   color: antiquewhite;
 }
+
 
 .box {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  color: #ccc;
   padding: 20px 50px;
   display: inline-block;
   text-decoration: none;

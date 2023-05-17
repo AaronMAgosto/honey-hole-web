@@ -38,22 +38,22 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
   const handleShow = () => setShowModal(true);
 
 
-  // function convertFile(files) {
-  //   if (files) {
-  //     // picks the first file from all the files selected
-  //     const fileRef = files[0] || "";
-  //     // picks the type so that it can send the right one to the database
-  //     const fileType = fileRef.type || "";
-  //     // sets reader as a new FileReader instance
-  //     const reader = new FileReader();
-  //     // converts fileref (the File) to a binary string
-  //     reader.readAsBinaryString(fileRef);
-  //     reader.onload = (ev) => {
-  //       // convert it to base64
-  //       setImage(`data:${fileType};base64,${window.btoa(ev.target.result)}`);
-  //     };
-  //   }
-  // }
+  function convertFile(files) {
+    if (files) {
+      // picks the first file from all the files selected
+      const fileRef = files[0] || "";
+      // picks the type so that it can send the right one to the database
+      const fileType = fileRef.type || "";
+      // sets reader as a new FileReader instance
+      const reader = new FileReader();
+      // converts fileref (the File) to a binary string
+      reader.readAsBinaryString(fileRef);
+      reader.onload = (ev) => {
+        // convert it to base64
+        setImage(`data:${fileType};base64,${window.btoa(ev.target.result)}`);
+      };
+    }
+  }
 
 
   return (
@@ -73,6 +73,19 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
           <form onSubmit={handleAddHoneyHole}>
             
             <div className="form-field">
+
+              <label htmlFor="image">
+                image
+                <input
+                  type="file"
+                  // value={image}
+                  onChange={(e) => {
+                    convertFile(e.target.files);
+                  }}
+                />
+              </label>
+              
+              <br />
 
               <label htmlFor="location">
                 Location
