@@ -39,7 +39,7 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
             <Col sm={10} md={4} lg={4}>
               <Card >
               
-                <div className="hole-card" key={honeyHole._id} >
+                <div className="hole-card justify-content-center" key={honeyHole._id} >
                   <Image fluid src={honeyHole.image} />
                    <h2>{honeyHole.location}</h2>
                 <h3>{honeyHole.species}</h3>
