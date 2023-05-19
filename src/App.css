@@ -1,3 +1,71 @@
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.video-container video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.homepage-content {
+  background-color: rgba(255, 255, 255, 0.668);
+  margin-top: 60px;
+  padding: 30px;
+}
+
+.add-honey-hole {
+  padding: 10px;
+}
+
+.add-honey-hole:hover {
+  color: white;
+  background-color: blueviolet;
+  border: 1px solid white;
+}
+
+h1 {
+  font-size: clamp(3.3rem, 4vw, 6.0rem) !important;
+  line-height: 1.1em;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+.hole-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* .location {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+} */
+
+.species {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+
+
+
 
 .form-field {
   display: flex;
@@ -14,27 +82,21 @@
   width: 100%;
 }
 
-.hole-card {
+/* .hole-card {
   border: 1px solid red;
   display: grid;
   padding: 10px;
   margin-bottom: 10px;
   margin: 10px;
-}
-
-.img-fluid{
-  
-}
+} */
 
 
-.hero{
+/* .hero{
   background-image: url("https://media.giphy.com/media/ZY7tD6FsWhTyEUPNyR/giphy.gif");
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 80vh;
-}
-
-
+} */
 
 .heroP{
   color: antiquewhite;
@@ -133,6 +195,10 @@
       translate(-50%, -75%) 
       rotate(360deg);
   }
+}
+
+.location{
+  text-align: center;
 }
 
 
