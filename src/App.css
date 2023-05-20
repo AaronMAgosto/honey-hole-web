@@ -127,10 +127,6 @@ h1 {
 .flip-card-front {
   background-color: rgba(255, 255, 255, 0.612);
   color: black;
-  /* background-image: url();
-  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
-     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
-  color: coral; */
 }
 
 .flip-card-back {
@@ -197,6 +193,24 @@ h1 {
   transform: translateY(30px);
   transition-duration: .3s;
 }
+
+
+.modal-image{
+  margin-left: auto;
+  margin-right: auto;
+  object-fit:cover;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

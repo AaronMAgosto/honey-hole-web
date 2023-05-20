@@ -6,6 +6,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
   const [species, setSpecies] = useState("");
   const [size, setSize] = useState("");
   const [image,  setImage] = useState("")
+  const [about,  setAbout] = useState('')
   const [showModal, setShowModal] = useState(false);
 
   const handleAddHoneyHole = (e) => {
@@ -16,7 +17,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({ image,location, species, size }),
+      body: JSON.stringify({ image,location, species,about, size }),
     })
       .then((resp) => resp.json())
       .then((data) => {
@@ -30,6 +31,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
         setLocation("");
         setSpecies("");
         setSize("")
+        setAbout('')
       })
       .catch(alert);
   };
@@ -115,8 +117,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
               </label>
             </div>
 
-            <br />
-
+            <br/>
             <div className="form-field">
               <label htmlFor="size">
                 Size
@@ -125,6 +126,21 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
                   value={size}
                   onChange={(e) => {
                     setSize(e.target.value);
+                  }}
+                />
+              </label>
+            </div>
+
+            <br />
+
+            <div className="form-field">
+              <label htmlFor="about">
+                About
+                <input
+                  type="text"
+                  value={about}
+                  onChange={(e) => {
+                    setAbout(e.target.value);
                   }}
                 />
               </label>

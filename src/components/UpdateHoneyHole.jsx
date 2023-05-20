@@ -11,6 +11,7 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
   const [size, setSize] = useState(honeyHole.size)
   const [image, setImage] = useState(honeyHole.image)
   const [show, setShow] = useState(false)
+  const [about, setAbout] = useState(honeyHole.about)
 
   // useEffect(() => {
   //   setLocation(currentLocation)
@@ -48,7 +49,7 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ image, location, species, size }),
+      body: JSON.stringify({ image, location, species, about, size }),
     })
     .then((resp) => resp.json())
     .then((data) => {
@@ -61,6 +62,7 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
       setLocation("") 
       setSpecies() 
       setSize("") 
+      setAbout('')
       setShow(false)
    
     })
@@ -113,6 +115,15 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
             />
           </Form.Group>
           <br />
+
+          <Form.Group>
+            <Form.Label>About</Form.Label>
+            <Form.Control
+              type="text"
+              value={about}
+              onChange={(e) => setAbout(e.target.value)}
+            />
+          </Form.Group>
 
           <Button className="p-2 btn-lg btn-edit" variant="outline-info" onClick={handleClose}>
             Close
