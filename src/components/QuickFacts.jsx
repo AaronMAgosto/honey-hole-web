@@ -66,12 +66,19 @@ export default function QuickFacts() {
         <Col><div class="flip-card">
     <div class="flip-card-inner">
         <div class="flip-card-front">
-            <p class="title">FLIP CARD</p>
+            <p class="title">Fun Facts</p>
             <p>Hover Over to Learn More!!</p>
         </div>
         <div class="flip-card-back">
-            <p class="title">BACK</p>
-            <p>Leave Me</p>
+            <p class="title">A Couple Fun Facts for you</p>
+            <p>
+              <ul>
+                <li>Florida is known as the "Fishing Capital of the World" due to its abundant and diverse fishing opportunities.</li>
+                <li>Florida has over 7,700 lakes, providing ample opportunities for freshwater fishing.</li>
+                <li>Lake Okeechobee, also known as the "Big O," is the largest freshwater lake in Florida and offers exceptional bass fishing opportunities.</li>
+                <li>Florida is known for its extensive canal system, providing anglers with easily accessible freshwater fishing spots throughout the state.</li>
+              </ul>
+            </p>
         </div>
     </div>
 </div>
