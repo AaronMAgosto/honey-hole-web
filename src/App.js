@@ -16,6 +16,7 @@ function App() {
     <>
     <BrowserRouter>
      <Hero/>
+     <br/>
      <QuickFacts/>
     
      <Routes>
