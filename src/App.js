@@ -6,6 +6,7 @@ import Gallery from "./components/Gallery"
 import Footer from "./components/Footer.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import QuickFacts from "./components/QuickFacts.jsx";
 
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
     <>
     <BrowserRouter>
      <Hero/>
+     <QuickFacts/>
     
      <Routes>
-       <Route path="/honeyholes"  element={<Cards honeyHoles={honeyHoles} setHoneyHoles={setHoneyHoles} />} />
-       <Route path="/" element={<Gallery />} />
+       <Route path="/"  element={<Cards honeyHoles={honeyHoles} setHoneyHoles={setHoneyHoles} />} />
+       {/* <Route path="/" element={<Gallery />} /> */}
      </Routes>
      <Footer/>
     </BrowserRouter>
