@@ -3,6 +3,7 @@ import { Form } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 import {Button} from "react-bootstrap";
 import { PencilSquare } from "react-bootstrap-icons";
+import { toast } from "react-toastify";
   
 export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
 
@@ -64,13 +65,13 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
       setSize("") 
       setAbout('')
       setShow(false)
-   
+      toast.success("Honey Hole has been Updated")
     })
     .catch(alert);
 }
   return (
       <>
-       <Button className="update-button bg-primary glow-on-hover"  size="30px" onClick={handleShow} variant="text">
+       <Button className="update"  size="30px" onClick={handleShow} variant="text">
          <PencilSquare size={30}/> Edit
         </Button>
     <Modal show={show} onHide={handleClose} size="xl">
