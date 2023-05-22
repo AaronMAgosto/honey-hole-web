@@ -39,7 +39,7 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
   
   return (
     <>
-    <Container className="main-container mt-5 pt-5" fluid>
+    <Container className="main-container mt-5 pt-5" >
       <Row>
         <Col><h2 className="card-title text-center">Honey Holes</h2></Col>
       </Row>
@@ -49,9 +49,10 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
       ? "Loading..."
       : honeyHoles.map(
         (honeyHole) => (
-            <Col sm={10} md={4} lg={4}>
+            <Col sm={10} md={6} lg={4}>
               
-              <Card style={{ height: '510px', width: '456px' }}>
+              {/*style={{ height: '510px', width: '456px' }} */}
+              <Card >
                 <div className="hole-card justify-content-center" key={honeyHole._id} >
                   <Card.Img 
                   onClick={() => {setSelectedHoneyHole(honeyHole); handleShow()}}
@@ -60,8 +61,8 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
                   <Card.Text className="text-card mb-0 pb-0">
                   <div className="bottom-half">
                    <h2 className="location mt-3">{honeyHole.location}</h2>
-                <h3 className="species">{honeyHole.species}</h3>
-                <p>Size: {honeyHole.size}</p>               
+                    <p className="species">{honeyHole.species}</p>
+                    <p className="size">Size: {honeyHole.size}</p>               
                 {/* <button className="button" onClick={() => deleteClick(honeyHole._id)}> </button> */}
                 <UpdateHoneyHole honeyHole={honeyHole} setHoneyHoles={setHoneyHoles} />
                 </div>

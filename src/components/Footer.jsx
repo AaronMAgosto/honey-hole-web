@@ -14,7 +14,9 @@ export default function Footer() {
         className="button-effect">
         <Github size='40' color='red'/>
         </a>
+        <div className="footer">
         <small>&copy; {currentYear} Aaron Agosto </small>
+        </div>
         </p>
         </footer>
 

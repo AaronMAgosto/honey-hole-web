@@ -72,7 +72,7 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
   return (
       <>
        <Button className="update"  size="30px" onClick={handleShow} variant="text">
-         <PencilSquare size={30}/> Edit
+         <PencilSquare size={15}/><small className="text-secondary"> Edit</small>
         </Button>
     <Modal show={show} onHide={handleClose} size="xl">
       <div className="whole-form">

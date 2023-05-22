@@ -4,9 +4,10 @@ import Cards from "./components/Cards.jsx";
 import Hero from "./pages/HomePage.jsx";
 import Gallery from "./components/Gallery"
 import Footer from "./components/Footer.jsx";
+import QuickFacts from "./components/QuickFacts.jsx";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
-import QuickFacts from "./components/QuickFacts.jsx";
 
 
 function App() {
