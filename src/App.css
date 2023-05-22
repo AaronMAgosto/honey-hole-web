@@ -58,6 +58,7 @@ h2.card-title{
 .heroP{
   color: black;
   font-family: 'Chivo Mono', monospace;
+  font-size: clamp(1rem , 2vw, 1.3rem);
 }
 
 .card {

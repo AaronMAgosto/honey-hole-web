@@ -64,7 +64,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
     <>
       
      <button className="add-honey-hole d-flex" 
-      onClick={handleShow}>Add Honey Hole!</button>   
+      onClick={handleShow}>Share Honey Hole!</button>   
      {/* <span><button className="box"  onClick={handleShow}>
         Add Honey Hole!
       </button> </span> */}

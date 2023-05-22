@@ -41,7 +41,7 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
     <>
     <Container className="main-container" >
       <Row>
-        <Col><h2 className="card-title text-center my-5">Honey Holes</h2></Col>
+        <Col><h2 className="card-title text-center my-5">The Sweet Spots</h2></Col>
       </Row>
       
       <Row className="d-flex justify-content-center g-4">
