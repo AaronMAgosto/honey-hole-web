@@ -20,6 +20,7 @@
   background-color: rgba(255, 255, 255, 0.668);
   margin-top: 60px;
   padding: 30px;
+ 
 }
 
 .add-honey-hole {
@@ -45,9 +46,10 @@ h1 {
   font-family: 'Chivo Mono', monospace;
 }
 
-.h2{
-   color: #ccc;
-   font-family: 'Chivo Mono', monospace;
+.card-title{
+  color: #ccc;
+  font-family: 'Chivo Mono', monospace;
+  font-size: 80px !important;
 }
 
 
@@ -267,6 +269,48 @@ h1 {
 }
 
 .delete-button:hover::before {
+  width: 250%;
+}
+
+
+.create-button{
+  text-align: center;
+  font-family: 'Chivo Mono', monospace;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: coral;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid coral;
+}
+
+.create-button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid coral;
+  box-shadow: 4px 5px 17px -4px coral;
+}
+
+.create-button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: coral;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.create-button:hover::before {
   width: 250%;
 }
 

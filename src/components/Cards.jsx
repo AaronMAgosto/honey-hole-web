@@ -51,7 +51,7 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
         (honeyHole) => (
             <Col sm={10} md={4} lg={4}>
               
-              <Card>
+              <Card style={{ height: '510px', width: '456px' }}>
                 <div className="hole-card justify-content-center" key={honeyHole._id} >
                   <Card.Img 
                   onClick={() => {setSelectedHoneyHole(honeyHole); handleShow()}}

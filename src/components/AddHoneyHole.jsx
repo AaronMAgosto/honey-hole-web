@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
+import { toast } from "react-toastify";
 
 export default function AddHoneyHoleModal({ setHoneyHoles }) {
   const [location, setLocation] = useState("");
@@ -32,6 +33,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
         setSpecies("");
         setSize("")
         setAbout('')
+        toast.success("Congrats! Brand New Honey Hole Added!")
       })
       .catch(alert);
   };
@@ -148,9 +150,13 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
 
             <br />
 
-            <div className="">
+            <button className="create-button" type="submit">
+               Create Honey Hole
+            </button>
+
+            {/* <div className="create-button">
               <input type="submit" value="Create Honey Hole" />
-            </div>
+            </div> */}
           </form>
         </Modal.Body>
       </Modal>

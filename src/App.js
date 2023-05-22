@@ -23,6 +23,7 @@ function App() {
        <Route path="/"  element={<Cards honeyHoles={honeyHoles} setHoneyHoles={setHoneyHoles} />} />
        {/* <Route path="/" element={<Gallery />} /> */}
      </Routes>
+     <br/>
      <Footer/>
     </BrowserRouter>
     </>
