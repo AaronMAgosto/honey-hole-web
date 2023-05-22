@@ -43,6 +43,16 @@ h1 {
   line-height: 1.1em;
   font-weight: 800;
   letter-spacing: -1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.422);
+}
+
+h2.card-title{
+  font-size: clamp(3rem, 5vw, 5rem);
+  color: coral;
+  font-family: 'Roboto Slab', serif; 
+  font-size: 80px !important;
+  margin-bottom: 3rem;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.422);
 }
 
 .heroP{
@@ -50,18 +60,12 @@ h1 {
   font-family: 'Chivo Mono', monospace;
 }
 
-.card-title{
-  font-size: clamp(3rem, 5vw, 5rem);
-  color: coral;
-  font-family: 'Roboto Slab', serif; 
-  font-size: 80px !important;
+.card {
+  background-color: rgba(246, 235, 235, 0.641) !important;
 }
 
 
-
-
-.card-body{
-  background-color: rgb(255, 127, 80 0.5)!important;
+.card-body{  
   width: 100%;
 }
 
@@ -87,8 +91,11 @@ h1 {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   transition: all 1.0s ease-in-out;
+}
+
+.hole-card figure {
+  overflow: hidden;
 }
 
 .hole-card:hover{

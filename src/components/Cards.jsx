@@ -54,10 +54,12 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
               {/*style={{ height: '510px', width: '456px' }} */}
               <Card >
                 <div className="hole-card justify-content-center" key={honeyHole._id} >
+                  <figure>
                   <Card.Img 
                   onClick={() => {setSelectedHoneyHole(honeyHole); handleShow()}}
                   fluid src={honeyHole.image} />
-                  <Card.Body className="card-body">
+                  </figure>
+                  <Card.Body>
                   <Card.Text className="text-card mb-0 pb-0">
                   <div className="bottom-half">
                    <h2 className="location mt-3">{honeyHole.location}</h2>
