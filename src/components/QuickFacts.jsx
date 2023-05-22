@@ -4,7 +4,11 @@ export default function QuickFacts() {
 
   return (
   <section>
-    <Container>
+    <Container className="my-5">
+    <Row>
+        <Col><h2 className="card-title text-center">Quick Facts</h2></Col>
+      </Row>
+
       <Row>
 
         <Col>

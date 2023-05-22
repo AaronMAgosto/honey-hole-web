@@ -18,13 +18,14 @@ function App() {
     <BrowserRouter>
      <Hero/>
      <br/>
-     <QuickFacts/>
+     
     
      <Routes>
        <Route path="/"  element={<Cards honeyHoles={honeyHoles} setHoneyHoles={setHoneyHoles} />} />
        {/* <Route path="/" element={<Gallery />} /> */}
      </Routes>
-     <br/>
+    
+     <QuickFacts/>
      <Footer/>
     </BrowserRouter>
     </>

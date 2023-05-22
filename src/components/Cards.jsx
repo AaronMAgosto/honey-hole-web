@@ -39,9 +39,9 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
   
   return (
     <>
-    <Container className="main-container mt-5 pt-5" >
+    <Container className="main-container" >
       <Row>
-        <Col><h2 className="card-title text-center">Honey Holes</h2></Col>
+        <Col><h2 className="card-title text-center my-5">Honey Holes</h2></Col>
       </Row>
       
       <Row className="d-flex justify-content-center g-4">
