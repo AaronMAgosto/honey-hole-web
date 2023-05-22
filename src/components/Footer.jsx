@@ -12,7 +12,7 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
         className="button-effect">
-        <Github size='40' color='red'/>
+        <Github size='40' color='coral'/>
         </a>
         <div className="footer">
         <small>&copy; {currentYear} Aaron Agosto </small>
