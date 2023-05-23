@@ -65,7 +65,7 @@ export default function UpdateHoneyHole({ honeyHole, setHoneyHoles }) {
       setSize("") 
       setAbout('')
       setShow(false)
-      toast.success("Honey Hole has been Updated")
+      toast.success("HoneyHole has been Updated")
     })
     .catch(alert);
 }

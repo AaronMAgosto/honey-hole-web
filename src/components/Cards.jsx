@@ -31,7 +31,7 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
     })
     .then(resp => resp.json())
     .then(setHoneyHoles)
-    toast.success("Honey Hole has been Eliminated")
+    toast.success("HoneyHole has been Eliminated")
     // .catch(alert) 
   }
 

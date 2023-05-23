@@ -24,17 +24,19 @@ export default function QuickFacts() {
             <h2 class="title">Top 10 Most Prevalent Fish</h2>
             
             <p>
-              
-                Largemouth Bass,
-                Bluegill,
-                Black Crappie,
-                Sunshine Bass,
-                Channel Catfish,
-                Redear Sunfish,
-                Striped Bass,
-                Spotted Sunfish,
-                Warmouth,
-                Bowfin,
+              <ul>
+               <li>Largemouth Bass</li>
+               <li>Bluegill</li>
+               <li>Black Crappie</li> 
+               <li>Sunshine Bass</li> 
+               <li>Channel Catfish</li> 
+               <li>Redear Sunfish</li> 
+               <li>Striped Bass</li> 
+               <li>Spotted Sunfish</li>
+               <li>Warmouth</li> 
+               <li>Bowfin</li> 
+                
+                </ul>
               
             </p>
         </div>

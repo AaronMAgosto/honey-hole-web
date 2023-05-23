@@ -208,6 +208,7 @@ h2.location{
      bisque 40%, rgb(255, 185, 160) 78%);
   color: white;
   transform: rotateY(180deg);
+  text-align: left;
 }
 
 .qf-img{

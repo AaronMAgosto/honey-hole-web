@@ -27,7 +27,7 @@ export default function Panel({data: {id,title,info, img}}) {
     <h3> {title}</h3>
     <p>{info}</p>
     <Modal.Footer>
-      <Link to="/honeyholes"><Button>Locate Honey Hole</Button></Link>
+      <Link to="/honeyholes"><Button>Locate HoneyHole</Button></Link>
     </Modal.Footer>
     </Modal>
 

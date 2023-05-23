@@ -33,7 +33,7 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
         setSpecies("");
         setSize("")
         setAbout('')
-        toast.success("Congrats! Brand New Honey Hole Added!")
+        toast.success("Congrats! Brand New HoneyHole Added!")
       })
       .catch(alert);
   };
@@ -64,15 +64,15 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
     <>
       
      <button className="add-honey-hole d-flex" 
-      onClick={handleShow}>Share Honey Hole!</button>   
+      onClick={handleShow}>Share HoneyHole!</button>   
      {/* <span><button className="box"  onClick={handleShow}>
-        Add Honey Hole!
+        Add HoneyHole!
       </button> </span> */}
      
 
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Mark Honey Hole 🍯</Modal.Title>
+          <Modal.Title>Mark HoneyHole 🍯</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <form onSubmit={handleAddHoneyHole}>
@@ -151,11 +151,11 @@ export default function AddHoneyHoleModal({ setHoneyHoles }) {
             <br />
 
             <button className="create-button" type="submit">
-               Create Honey Hole
+               Create HoneyHole
             </button>
 
             {/* <div className="create-button">
-              <input type="submit" value="Create Honey Hole" />
+              <input type="submit" value="Create HoneyHole" />
             </div> */}
           </form>
         </Modal.Body>
