@@ -20,7 +20,7 @@ export default function Hero() {
 
             <div className="homepage-content">
               <h1 className="header">Florida's HoneyHole</h1>
-              <p className="heroP">Our mission is to simplify and enhance fishing for enthusiasts. We connect you with the best fishing spots, known as honeyholes, so you can have a rewarding experience. With our services, you can eliminate guesswork and focus on catching the big fish!</p>
+              <p className="heroP">Our mission is to simplify and enhance fishing for enthusiasts. We connect you with the best fishing spots, known as HoneyHoles, so you can have a rewarding experience. With our services, you can eliminate guesswork and focus on catching the big fish!</p>
               <AddHoneyHoleModal />
             </div>
           </Col>
