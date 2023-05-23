@@ -82,7 +82,7 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
             <Modal.Body key={selectedHoneyHole._id}>
               <Modal.Header closeButton>
                 <Modal.Title>
-                  <p>{selectedHoneyHole.location}</p>
+                  <p className="modal-location">{selectedHoneyHole.location}</p>
                 </Modal.Title>
               </Modal.Header>
               <Image fluid className="modal-image" src={selectedHoneyHole.image}/>

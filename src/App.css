@@ -115,6 +115,10 @@ h2.card-title{
   transform: scale(1.15);
 }
 
+.modal-header{
+  text-align: center;
+}
+
 
 h2.location{
   font-size: clamp(1.3rem, 4vw, 1.4rem);
@@ -265,11 +269,11 @@ h1.header{
 
 .delete-button{
   font-family: 'Chivo Mono', monospace;
-  padding: 1em 2em;
+  /* padding: 1em 2em; */
   border: none;
   border-radius: 5px;
-  font-weight: bold;
-  letter-spacing: 5px;
+  font-weight:100;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: red;
   transition: all 1000ms;
