@@ -15,7 +15,8 @@ export default function QuickFacts() {
         <div class="flip-card">
     <div class="flip-card-inner">
         <div class="flip-card-front">
-        <img src="" />
+        <img className="qf-img" src="/images/qf1.png" alt="badass bass" />
+
             <p class="title">Native Fish Species:</p>
             <p>Hover Over to Learn More!!</p>
         </div>
@@ -45,6 +46,7 @@ export default function QuickFacts() {
         <div class="flip-card">
     <div class="flip-card-inner">
         <div class="flip-card-front">
+        <img className="qf-img" src="/images/qf2.png" alt="earthy thing" />
             <p class="title">Conservation Tips</p>
             <p>Hover Over to Learn More!!</p>
         </div>
@@ -72,7 +74,8 @@ export default function QuickFacts() {
         <Col><div class="flip-card">
     <div class="flip-card-inner">
         <div class="flip-card-front">
-            <p class="title">Fun Facts</p>
+        <img className="qf-img" src="/images/qf3.png" alt="Florida state seal" />
+            <p class="title">Florida Fishing Facts</p>
             <p>Hover Over to Learn More!!</p>
         </div>
         <div class="flip-card-back">

@@ -47,10 +47,10 @@ h1 {
 }
 
 h2.card-title{
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(3rem, 5vw, 5.3rem);
   color: coral;
   font-family: 'Roboto Slab', serif; 
-  font-size: 80px !important;
+  /* font-size: 80px !important; */
   margin-bottom: 3rem;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.422);
 }
@@ -208,6 +208,11 @@ h2.location{
      bisque 40%, rgb(255, 185, 160) 78%);
   color: white;
   transform: rotateY(180deg);
+}
+
+.qf-img{
+  width: 55%;
+  margin: auto;
 }
 
 h1.header{
