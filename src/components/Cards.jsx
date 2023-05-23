@@ -17,7 +17,7 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
     .then(setHoneyHoles)
     
     .catch(alert) 
-  }, []);
+  }, [setHoneyHoles]);
 
 
 
