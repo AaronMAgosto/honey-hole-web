@@ -17,7 +17,7 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
     .then(setHoneyHoles)
     
     .catch(alert) 
-  }, [setHoneyHoles]);
+  }, []);
 
 
 
@@ -88,9 +88,9 @@ export default function Cards({honeyHoles, setHoneyHoles}) {
               <Image fluid className="modal-image" src={selectedHoneyHole.image}/>
               <p>{selectedHoneyHole.about}</p>
 
-                <button class="delete-button" onClick={() => deleteClick(selectedHoneyHole._id)}> 
+                {/* <button class="delete-button" onClick={() => deleteClick(selectedHoneyHole._id)}> 
                 Delete
-                </button>
+                </button> */}
              
 
               {/* <button className="button" onClick={() => deleteClick(selectedHoneyHole._id)}>Delete</button> */}
